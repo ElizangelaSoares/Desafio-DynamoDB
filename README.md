@@ -30,6 +30,7 @@ aws dynamodb create-table \
 ```
 
 <h3>🔻 Inserir um item:</h3> 
+
 ```
 aws dynamodb put-item \
     --table-name Music \
