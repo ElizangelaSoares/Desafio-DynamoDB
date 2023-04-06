@@ -1,5 +1,10 @@
 <h1> Desafio: DynamoDB</h1>
 
+<h2>Descrição do Desafio</h2>
+<p>
+Características Relacionais (SQL) e Não Relacionais (NoSQL) usando o mesmo banco de dados? Isso é possível? Com o DynamoDB sim! Entenda um pouco das possibilidades desse banco de dados totalmente gerenciado da AWS. Para isso, nosso super expert apresenta uma série de boas práticas para o DynamoDB em um desafio totalmente prático. 
+</p>
+
 <h2>🛑 Pré-Requisitos</h2>
 
 <p>
