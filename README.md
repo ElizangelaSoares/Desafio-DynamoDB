@@ -10,7 +10,7 @@
 <h2> ‼️ Comandos para execução do experimento ‼️</h2>
 
 <h3>🔻 Criar uma tabela:</h3> 
-```
+<br>
 aws dynamodb create-table \
     --table-name Music \
     --attribute-definitions \
@@ -21,7 +21,7 @@ aws dynamodb create-table \
         AttributeName=SongTitle,KeyType=RANGE \
     --provisioned-throughput \
         ReadCapacityUnits=10,WriteCapacityUnits=5
-```
+<br>
 
 <h3>🔻 Inserir um item:</h3> 
 ```
@@ -30,7 +30,7 @@ aws dynamodb put-item \
     --item file://itemmusic.json \
 ```
 
-<h3>🔻 nserir múltiplos itens:</h3> 
+<h3>🔻 Inserir múltiplos itens:</h3> 
 ```
 aws dynamodb batch-write-item \
     --request-items file://batchmusic.json
