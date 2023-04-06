@@ -16,6 +16,7 @@ Características Relacionais (SQL) e Não Relacionais (NoSQL) usando o mesmo ban
 
 <h3>🔻 Criar uma tabela:</h3> 
 
+```
 aws dynamodb create-table \
     --table-name Music \
     --attribute-definitions \
@@ -26,6 +27,7 @@ aws dynamodb create-table \
         AttributeName=SongTitle,KeyType=RANGE \
     --provisioned-throughput \
         ReadCapacityUnits=10,WriteCapacityUnits=5
+```
 
 <h3>🔻 Inserir um item:</h3> 
 aws dynamodb put-item \
