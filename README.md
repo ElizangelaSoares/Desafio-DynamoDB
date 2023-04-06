@@ -16,16 +16,16 @@ Características Relacionais (SQL) e Não Relacionais (NoSQL) usando o mesmo ban
 
 <h3>🔻 Criar uma tabela:</h3> 
 
-aws dynamodb create-table \<br>
-    --table-name Music \<br>
-    --attribute-definitions \<br>
-        AttributeName=Artist,AttributeType=S \<br>
-        AttributeName=SongTitle,AttributeType=S \<br>
-    --key-schema \<br>
-        AttributeName=Artist,KeyType=HASH \<br>
-        AttributeName=SongTitle,KeyType=RANGE \<br>
-    --provisioned-throughput \<br>
-        ReadCapacityUnits=10,WriteCapacityUnits=5<br>
+aws dynamodb create-table \
+    --table-name Music \
+    --attribute-definitions \
+        AttributeName=Artist,AttributeType=S \
+        AttributeName=SongTitle,AttributeType=S \
+    --key-schema \
+        AttributeName=Artist,KeyType=HASH \
+        AttributeName=SongTitle,KeyType=RANGE \
+    --provisioned-throughput \
+        ReadCapacityUnits=10,WriteCapacityUnits=5
 <br>
 
 <h3>🔻 Inserir um item:</h3> 
