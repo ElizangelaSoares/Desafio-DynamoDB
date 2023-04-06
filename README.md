@@ -38,12 +38,14 @@ aws dynamodb put-item \
 ```
 
 <h3>🔻 Inserir múltiplos itens:</h3> 
+
 ```
 aws dynamodb batch-write-item \
     --request-items file://batchmusic.json
 ```
 
 <h3>🔻 Criar um index global secundário baeado no título do álbum:</h3> 
+
 ```
 aws dynamodb update-table \
     --table-name Music \
@@ -54,6 +56,7 @@ aws dynamodb update-table \
 ```
 
 <h3>🔻 Criar um index global secundário baseado no nome do artista e no título do álbum:</h3> 
+
 ```
 aws dynamodb update-table \
     --table-name Music \
@@ -66,6 +69,7 @@ aws dynamodb update-table \
 ```
 
 <h3>🔻  Criar um index global secundário baseado no título da música e no ano:</h3> 
+
 ```
 aws dynamodb update-table \
     --table-name Music \
@@ -78,6 +82,7 @@ aws dynamodb update-table \
 ```
 
 <h3>🔻 Pesquisar item por artista:</h3> 
+
 ```
 aws dynamodb query \
     --table-name Music \
@@ -86,6 +91,7 @@ aws dynamodb query \
 ```
 
 <h3>🔻 Pesquisar item por artista e título da música:</h3> 
+
 ```
 aws dynamodb query \
     --table-name Music \
@@ -94,6 +100,7 @@ aws dynamodb query \
 ```
 
 <h3>🔻 Pesquisa pelo index secundário baseado no título do álbum:</h3> 
+
 ```
 aws dynamodb query \
     --table-name Music \
@@ -103,6 +110,7 @@ aws dynamodb query \
 ```
 
 <h3>🔻 Pesquisa pelo index secundário baseado no nome do artista e no título do álbum:</h3> 
+
 ```
 aws dynamodb query \
     --table-name Music \
@@ -112,6 +120,7 @@ aws dynamodb query \
 ```
 
 <h3>🔻 Pesquisa pelo index secundário baseado no título da música e no ano:</h3> 
+
 ```
 aws dynamodb query \
     --table-name Music \
